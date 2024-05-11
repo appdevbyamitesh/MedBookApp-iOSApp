@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C95828702BB5E8E100E80AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958286F2BB5E8E100E80AC6 /* AppDelegate.swift */; };
+		C95828722BB5E8E100E80AC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828712BB5E8E100E80AC6 /* SceneDelegate.swift */; };
+		C95828742BB5E8E100E80AC6 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828732BB5E8E100E80AC6 /* LandingViewController.swift */; };
+		C95828792BB5E8E500E80AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95828782BB5E8E500E80AC6 /* Assets.xcassets */; };
+		C958288F2BB5EF4E00E80AC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958288E2BB5EF4E00E80AC6 /* Extensions.swift */; };
+		C95828922BB689DC00E80AC6 /* SignupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828912BB689DC00E80AC6 /* SignupPageViewController.swift */; };
+		C95828942BB689EC00E80AC6 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828932BB689EC00E80AC6 /* LoginPageViewController.swift */; };
+		C95828962BB68CD100E80AC6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828952BB68CD100E80AC6 /* MainCoordinator.swift */; };
+		C95828992BB68D1800E80AC6 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828982BB68D1800E80AC6 /* ViewControllerAssembly.swift */; };
+		C958289B2BB68D8F00E80AC6 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958289A2BB68D8F00E80AC6 /* LandingViewModel.swift */; };
+		C958289D2BB69E5100E80AC6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958289C2BB69E5100E80AC6 /* Utilities.swift */; };
+		C95828A02BB6B68600E80AC6 /* CountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958289F2BB6B68600E80AC6 /* CountriesResponse.swift */; };
+		C95828A32BB6B6C900E80AC6 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828A22BB6B6C900E80AC6 /* CountryService.swift */; };
+		C95828A52BB6B6F200E80AC6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828A42BB6B6F200E80AC6 /* NetworkError.swift */; };
+		C95828A82BB6B79200E80AC6 /* SignupPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828A72BB6B79200E80AC6 /* SignupPageViewModel.swift */; };
+		C95828AB2BB6BEE100E80AC6 /* SignupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828AA2BB6BEE100E80AC6 /* SignupPageView.swift */; };
+		C95828B02BB6EAEF00E80AC6 /* UserAuthenticationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828AF2BB6EAEF00E80AC6 /* UserAuthenticationData.swift */; };
+		C95828B42BB6ED8000E80AC6 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828B32BB6ED8000E80AC6 /* LoginPageView.swift */; };
+		C95828B62BB6EE8000E80AC6 /* LoginPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828B52BB6EE8000E80AC6 /* LoginPageViewModel.swift */; };
+		C95828B92BB70D6000E80AC6 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828B82BB70D6000E80AC6 /* HomeScreenView.swift */; };
+		C95828BB2BB70D7D00E80AC6 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828BA2BB70D7D00E80AC6 /* HomeScreenViewController.swift */; };
+		C95828BE2BB7C00100E80AC6 /* HomeScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828BD2BB7C00100E80AC6 /* HomeScreenCardView.swift */; };
+		C95828C12BB7ECF500E80AC6 /* GetBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828C02BB7ECF500E80AC6 /* GetBooksService.swift */; };
+		C95828C32BB7ED1B00E80AC6 /* GetBooksServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828C22BB7ED1B00E80AC6 /* GetBooksServiceProtocol.swift */; };
+		C95828C62BB7F28100E80AC6 /* BooksServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828C52BB7F28100E80AC6 /* BooksServiceModel.swift */; };
+		C95828C82BB7F2CB00E80AC6 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828C72BB7F2CB00E80AC6 /* HomeScreenViewModel.swift */; };
+		C95828CA2BB8092500E80AC6 /* HomeScreenCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828C92BB8092500E80AC6 /* HomeScreenCardModel.swift */; };
+		C95828D12BB912E200E80AC6 /* BookmarkedBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828D02BB912E200E80AC6 /* BookmarkedBookModel.swift */; };
+		C95828D42BB9222C00E80AC6 /* BookmarkScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828D32BB9222C00E80AC6 /* BookmarkScreenViewController.swift */; };
+		C95828D62BB9224500E80AC6 /* BookmarkScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828D52BB9224500E80AC6 /* BookmarkScreenView.swift */; };
+		C95828D92BB9226300E80AC6 /* BookmarkScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95828D82BB9226300E80AC6 /* BookmarkScreenViewModel.swift */; };
+		CBECA472ADE9304919337451 /* Pods_MedBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DCF053815B136384731FFF /* Pods_MedBookApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		237F2AD82FC4AEA3E8C29D20 /* Pods-MedBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedBookApp.release.xcconfig"; path = "Target Support Files/Pods-MedBookApp/Pods-MedBookApp.release.xcconfig"; sourceTree = "<group>"; };
+		33A9222DD7C1B112600069B7 /* Pods-MedBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedBookApp.debug.xcconfig"; path = "Target Support Files/Pods-MedBookApp/Pods-MedBookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		68DCF053815B136384731FFF /* Pods_MedBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C958286C2BB5E8E100E80AC6 /* MedBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C958286F2BB5E8E100E80AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C95828712BB5E8E100E80AC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C95828732BB5E8E100E80AC6 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		C95828782BB5E8E500E80AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C958287D2BB5E8E500E80AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C958288E2BB5EF4E00E80AC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C95828912BB689DC00E80AC6 /* SignupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewController.swift; sourceTree = "<group>"; };
+		C95828932BB689EC00E80AC6 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		C95828952BB68CD100E80AC6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C95828982BB68D1800E80AC6 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		C958289A2BB68D8F00E80AC6 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		C958289C2BB69E5100E80AC6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C958289F2BB6B68600E80AC6 /* CountriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesResponse.swift; sourceTree = "<group>"; };
+		C95828A22BB6B6C900E80AC6 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		C95828A42BB6B6F200E80AC6 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C95828A72BB6B79200E80AC6 /* SignupPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewModel.swift; sourceTree = "<group>"; };
+		C95828AA2BB6BEE100E80AC6 /* SignupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageView.swift; sourceTree = "<group>"; };
+		C95828AF2BB6EAEF00E80AC6 /* UserAuthenticationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationData.swift; sourceTree = "<group>"; };
+		C95828B32BB6ED8000E80AC6 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		C95828B52BB6EE8000E80AC6 /* LoginPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewModel.swift; sourceTree = "<group>"; };
+		C95828B82BB70D6000E80AC6 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		C95828BA2BB70D7D00E80AC6 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		C95828BD2BB7C00100E80AC6 /* HomeScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCardView.swift; sourceTree = "<group>"; };
+		C95828C02BB7ECF500E80AC6 /* GetBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksService.swift; sourceTree = "<group>"; };
+		C95828C22BB7ED1B00E80AC6 /* GetBooksServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksServiceProtocol.swift; sourceTree = "<group>"; };
+		C95828C52BB7F28100E80AC6 /* BooksServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksServiceModel.swift; sourceTree = "<group>"; };
+		C95828C72BB7F2CB00E80AC6 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		C95828C92BB8092500E80AC6 /* HomeScreenCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCardModel.swift; sourceTree = "<group>"; };
+		C95828D02BB912E200E80AC6 /* BookmarkedBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedBookModel.swift; sourceTree = "<group>"; };
+		C95828D32BB9222C00E80AC6 /* BookmarkScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkScreenViewController.swift; sourceTree = "<group>"; };
+		C95828D52BB9224500E80AC6 /* BookmarkScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkScreenView.swift; sourceTree = "<group>"; };
+		C95828D82BB9226300E80AC6 /* BookmarkScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkScreenViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95828692BB5E8E100E80AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBECA472ADE9304919337451 /* Pods_MedBookApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D474283639EE790542AD0F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68DCF053815B136384731FFF /* Pods_MedBookApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63147EFEFAF50C9D891F7282 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33A9222DD7C1B112600069B7 /* Pods-MedBookApp.debug.xcconfig */,
+				237F2AD82FC4AEA3E8C29D20 /* Pods-MedBookApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C95828632BB5E8E100E80AC6 = {
+			isa = PBXGroup;
+			children = (
+				C958286E2BB5E8E100E80AC6 /* MedBookApp */,
+				C958286D2BB5E8E100E80AC6 /* Products */,
+				63147EFEFAF50C9D891F7282 /* Pods */,
+				5D474283639EE790542AD0F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C958286D2BB5E8E100E80AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C958286C2BB5E8E100E80AC6 /* MedBookApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C958286E2BB5E8E100E80AC6 /* MedBookApp */ = {
+			isa = PBXGroup;
+			children = (
+				C95828862BB5EA1900E80AC6 /* Coordinators */,
+				C95828972BB68CEE00E80AC6 /* ViewControllerAssembly */,
+				C95828842BB5E92900E80AC6 /* Models */,
+				C95828872BB5EA6000E80AC6 /* NetworkLayer */,
+				C95828832BB5E91E00E80AC6 /* Views */,
+				C95828852BB5E93300E80AC6 /* ViewModels */,
+				C95828882BB5EA9000E80AC6 /* Utilities */,
+				C958286F2BB5E8E100E80AC6 /* AppDelegate.swift */,
+				C95828712BB5E8E100E80AC6 /* SceneDelegate.swift */,
+				C95828782BB5E8E500E80AC6 /* Assets.xcassets */,
+				C958287D2BB5E8E500E80AC6 /* Info.plist */,
+			);
+			path = MedBookApp;
+			sourceTree = "<group>";
+		};
+		C95828832BB5E91E00E80AC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C95828892BB5EADA00E80AC6 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C95828842BB5E92900E80AC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C95828B12BB6EAF500E80AC6 /* LocalStorageData */,
+				C95828C42BB7EFD800E80AC6 /* BooksServiceModel */,
+				C958289E2BB6B66800E80AC6 /* NetworkLayerModel */,
+				C95828C92BB8092500E80AC6 /* HomeScreenCardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C95828852BB5E93300E80AC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C95828DA2BB9229900E80AC6 /* HomeScreen */,
+				C95828D72BB9225500E80AC6 /* BookmarkScreen */,
+				C95828A62BB6B77400E80AC6 /* Authentication */,
+				C958289A2BB68D8F00E80AC6 /* LandingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C95828862BB5EA1900E80AC6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C95828952BB68CD100E80AC6 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C95828872BB5EA6000E80AC6 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C95828BF2BB7ECD200E80AC6 /* GetBooksService */,
+				C95828A12BB6B6B600E80AC6 /* CountryService */,
+				C95828A42BB6B6F200E80AC6 /* NetworkError.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		C95828882BB5EA9000E80AC6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C958288B2BB5EF2800E80AC6 /* Extensions */,
+				C958289C2BB69E5100E80AC6 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C95828892BB5EADA00E80AC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C95828D22BB9221000E80AC6 /* BookmarkScreen */,
+				C95828B72BB70D4100E80AC6 /* HomeScreen */,
+				C95828902BB6899F00E80AC6 /* Authentication */,
+				C95828732BB5E8E100E80AC6 /* LandingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C958288B2BB5EF2800E80AC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C958288E2BB5EF4E00E80AC6 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C95828902BB6899F00E80AC6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C95828B22BB6ED6A00E80AC6 /* LoginPage */,
+				C95828A92BB6BEC900E80AC6 /* SignupPage */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C95828972BB68CEE00E80AC6 /* ViewControllerAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				C95828982BB68D1800E80AC6 /* ViewControllerAssembly.swift */,
+			);
+			path = ViewControllerAssembly;
+			sourceTree = "<group>";
+		};
+		C958289E2BB6B66800E80AC6 /* NetworkLayerModel */ = {
+			isa = PBXGroup;
+			children = (
+				C958289F2BB6B68600E80AC6 /* CountriesResponse.swift */,
+			);
+			path = NetworkLayerModel;
+			sourceTree = "<group>";
+		};
+		C95828A12BB6B6B600E80AC6 /* CountryService */ = {
+			isa = PBXGroup;
+			children = (
+				C95828A22BB6B6C900E80AC6 /* CountryService.swift */,
+			);
+			path = CountryService;
+			sourceTree = "<group>";
+		};
+		C95828A62BB6B77400E80AC6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C95828A72BB6B79200E80AC6 /* SignupPageViewModel.swift */,
+				C95828B52BB6EE8000E80AC6 /* LoginPageViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C95828A92BB6BEC900E80AC6 /* SignupPage */ = {
+			isa = PBXGroup;
+			children = (
+				C95828912BB689DC00E80AC6 /* SignupPageViewController.swift */,
+				C95828AA2BB6BEE100E80AC6 /* SignupPageView.swift */,
+			);
+			path = SignupPage;
+			sourceTree = "<group>";
+		};
+		C95828B12BB6EAF500E80AC6 /* LocalStorageData */ = {
+			isa = PBXGroup;
+			children = (
+				C95828AF2BB6EAEF00E80AC6 /* UserAuthenticationData.swift */,
+				C95828D02BB912E200E80AC6 /* BookmarkedBookModel.swift */,
+			);
+			path = LocalStorageData;
+			sourceTree = "<group>";
+		};
+		C95828B22BB6ED6A00E80AC6 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				C95828932BB689EC00E80AC6 /* LoginPageViewController.swift */,
+				C95828B32BB6ED8000E80AC6 /* LoginPageView.swift */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		C95828B72BB70D4100E80AC6 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C95828BC2BB7BF2C00E80AC6 /* HomeScreenCard */,
+				C95828B82BB70D6000E80AC6 /* HomeScreenView.swift */,
+				C95828BA2BB70D7D00E80AC6 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		C95828BC2BB7BF2C00E80AC6 /* HomeScreenCard */ = {
+			isa = PBXGroup;
+			children = (
+				C95828BD2BB7C00100E80AC6 /* HomeScreenCardView.swift */,
+			);
+			path = HomeScreenCard;
+			sourceTree = "<group>";
+		};
+		C95828BF2BB7ECD200E80AC6 /* GetBooksService */ = {
+			isa = PBXGroup;
+			children = (
+				C95828C02BB7ECF500E80AC6 /* GetBooksService.swift */,
+				C95828C22BB7ED1B00E80AC6 /* GetBooksServiceProtocol.swift */,
+			);
+			path = GetBooksService;
+			sourceTree = "<group>";
+		};
+		C95828C42BB7EFD800E80AC6 /* BooksServiceModel */ = {
+			isa = PBXGroup;
+			children = (
+				C95828C52BB7F28100E80AC6 /* BooksServiceModel.swift */,
+			);
+			path = BooksServiceModel;
+			sourceTree = "<group>";
+		};
+		C95828D22BB9221000E80AC6 /* BookmarkScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C95828D32BB9222C00E80AC6 /* BookmarkScreenViewController.swift */,
+				C95828D52BB9224500E80AC6 /* BookmarkScreenView.swift */,
+			);
+			path = BookmarkScreen;
+			sourceTree = "<group>";
+		};
+		C95828D72BB9225500E80AC6 /* BookmarkScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C95828D82BB9226300E80AC6 /* BookmarkScreenViewModel.swift */,
+			);
+			path = BookmarkScreen;
+			sourceTree = "<group>";
+		};
+		C95828DA2BB9229900E80AC6 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C95828C72BB7F2CB00E80AC6 /* HomeScreenViewModel.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C958286B2BB5E8E100E80AC6 /* MedBookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95828802BB5E8E500E80AC6 /* Build configuration list for PBXNativeTarget "MedBookApp" */;
+			buildPhases = (
+				75E77A848D26BEE30F0B4D94 /* [CP] Check Pods Manifest.lock */,
+				C95828682BB5E8E100E80AC6 /* Sources */,
+				C95828692BB5E8E100E80AC6 /* Frameworks */,
+				C958286A2BB5E8E100E80AC6 /* Resources */,
+				B5E7363E092F132059183AA9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedBookApp;
+			productName = MedBookApp;
+			productReference = C958286C2BB5E8E100E80AC6 /* MedBookApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95828642BB5E8E100E80AC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C958286B2BB5E8E100E80AC6 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = C95828672BB5E8E100E80AC6 /* Build configuration list for PBXProject "MedBookApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C95828632BB5E8E100E80AC6;
+			productRefGroup = C958286D2BB5E8E100E80AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C958286B2BB5E8E100E80AC6 /* MedBookApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C958286A2BB5E8E100E80AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95828792BB5E8E500E80AC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75E77A848D26BEE30F0B4D94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedBookApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E7363E092F132059183AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedBookApp/Pods-MedBookApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedBookApp/Pods-MedBookApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedBookApp/Pods-MedBookApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95828682BB5E8E100E80AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95828B02BB6EAEF00E80AC6 /* UserAuthenticationData.swift in Sources */,
+				C95828A32BB6B6C900E80AC6 /* CountryService.swift in Sources */,
+				C95828922BB689DC00E80AC6 /* SignupPageViewController.swift in Sources */,
+				C95828962BB68CD100E80AC6 /* MainCoordinator.swift in Sources */,
+				C95828C82BB7F2CB00E80AC6 /* HomeScreenViewModel.swift in Sources */,
+				C95828742BB5E8E100E80AC6 /* LandingViewController.swift in Sources */,
+				C95828B42BB6ED8000E80AC6 /* LoginPageView.swift in Sources */,
+				C95828702BB5E8E100E80AC6 /* AppDelegate.swift in Sources */,
+				C95828CA2BB8092500E80AC6 /* HomeScreenCardModel.swift in Sources */,
+				C95828C12BB7ECF500E80AC6 /* GetBooksService.swift in Sources */,
+				C95828A82BB6B79200E80AC6 /* SignupPageViewModel.swift in Sources */,
+				C95828BE2BB7C00100E80AC6 /* HomeScreenCardView.swift in Sources */,
+				C95828942BB689EC00E80AC6 /* LoginPageViewController.swift in Sources */,
+				C95828BB2BB70D7D00E80AC6 /* HomeScreenViewController.swift in Sources */,
+				C95828722BB5E8E100E80AC6 /* SceneDelegate.swift in Sources */,
+				C95828AB2BB6BEE100E80AC6 /* SignupPageView.swift in Sources */,
+				C95828D92BB9226300E80AC6 /* BookmarkScreenViewModel.swift in Sources */,
+				C95828B92BB70D6000E80AC6 /* HomeScreenView.swift in Sources */,
+				C95828D12BB912E200E80AC6 /* BookmarkedBookModel.swift in Sources */,
+				C95828D42BB9222C00E80AC6 /* BookmarkScreenViewController.swift in Sources */,
+				C95828C32BB7ED1B00E80AC6 /* GetBooksServiceProtocol.swift in Sources */,
+				C95828D62BB9224500E80AC6 /* BookmarkScreenView.swift in Sources */,
+				C95828992BB68D1800E80AC6 /* ViewControllerAssembly.swift in Sources */,
+				C958289B2BB68D8F00E80AC6 /* LandingViewModel.swift in Sources */,
+				C95828C62BB7F28100E80AC6 /* BooksServiceModel.swift in Sources */,
+				C958289D2BB69E5100E80AC6 /* Utilities.swift in Sources */,
+				C95828A52BB6B6F200E80AC6 /* NetworkError.swift in Sources */,
+				C95828A02BB6B68600E80AC6 /* CountriesResponse.swift in Sources */,
+				C958288F2BB5EF4E00E80AC6 /* Extensions.swift in Sources */,
+				C95828B62BB6EE8000E80AC6 /* LoginPageViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C958287E2BB5E8E500E80AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C958287F2BB5E8E500E80AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C95828812BB5E8E500E80AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A9222DD7C1B112600069B7 /* Pods-MedBookApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L9Y76834Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBookApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekyAmitesh.MedBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C95828822BB5E8E500E80AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237F2AD82FC4AEA3E8C29D20 /* Pods-MedBookApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L9Y76834Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBookApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GeekyAmitesh.MedBookApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95828672BB5E8E100E80AC6 /* Build configuration list for PBXProject "MedBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C958287E2BB5E8E500E80AC6 /* Debug */,
+				C958287F2BB5E8E500E80AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95828802BB5E8E500E80AC6 /* Build configuration list for PBXNativeTarget "MedBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95828812BB5E8E500E80AC6 /* Debug */,
+				C95828822BB5E8E500E80AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95828642BB5E8E100E80AC6 /* Project object */;
+}
